@@ -1,0 +1,58 @@
+@include mobile{
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 5.5rem 0 4.5rem 0;
+        align-items: center;
+        gap: 12.5px;
+        &__img{
+            display: none;
+        }
+        &__groupBtn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3.32rem;
+        }
+        &__text-mobile{
+            display: block;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: 0.1px;
+            color: #5C5C5C;
+        }
+        &__text-desk{
+            display: none;
+        }
+    }
+}
+@include tablet{
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3.69rem 11.5rem;
+        &__img{
+            display: block;
+        }
+        &__text-mobile{
+            display: none;
+        }
+        &__text-desk{
+            display: block;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: right;
+            letter-spacing: 0.1px;
+            color: #5C5C5C;
+        }
+    }
+}

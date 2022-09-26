@@ -1,0 +1,82 @@
+@include mobile {
+  .download {
+    margin-top: 5.7rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6.4rem 5.4rem 6.4rem 5.4rem;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    &__title {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 57px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #ffffff;
+      width: 90%;
+      align-self: center;
+    }
+    &__desc {
+      display: block;
+      width: 80%;
+      align-self: center;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 38px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #bdbdbd;
+      margin: 2rem 0 6rem 0;
+    }
+    &__desc--desktop {
+      display: none;
+    }
+    &__groupBtn {
+      width: 100%;
+      max-width: 500px;
+      gap: 1.6rem;
+      display: flex;
+      align-self: center;
+    }
+  }
+}
+@include tablet {
+  .download {
+    margin-top: 15.7rem;
+    background-color: none;
+    background: url("../../../Public/bg_bottom.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    &__title {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 57px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #ffffff;
+    }
+    &__desc--desktop {
+      display: block;
+      margin: 2rem 0 6rem 0;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 38px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #ffffff;
+    }
+    &__desc {
+      display: none;
+    }
+  }
+}
