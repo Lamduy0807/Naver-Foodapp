@@ -40,8 +40,13 @@
       width: 100%;
       max-width: 500px;
       gap: 1.6rem;
-      display: flex;
       align-self: center;
+      &--mobile{
+        display: flex;
+      }
+      &--desktop{
+        display: none;
+      }
     }
   }
 }
@@ -77,6 +82,14 @@
     }
     &__desc {
       display: none;
+    }
+    &__groupBtn {
+      &--mobile{
+        display: none;
+      }
+      &--desktop{
+        display: flex;
+      }
     }
   }
 }

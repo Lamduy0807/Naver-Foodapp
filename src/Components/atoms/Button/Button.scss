@@ -4,6 +4,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.07);
+        transition: all ease-in .2s;
+    }
     &--normal{
         background-color: $main-color;
         border: none !important;

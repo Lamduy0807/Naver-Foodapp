@@ -16,7 +16,6 @@
             justify-content: center;
             align-items: center;
         }
-        padding: 50px 0 0 0;
         &__title{
             font-family: 'Montserrat';
             font-style: normal;
@@ -142,6 +141,10 @@
             display: flex;
             padding: 1.7rem 0 4rem 0 ;
             transform: translateY(-14rem);
+            &:hover img:nth-child(1){
+                transform: translateY(74px);
+                transition: all ease-in .5s;
+            }
             & img:nth-child(1){
                 transform: translateX(15px);
                 width: 50%;

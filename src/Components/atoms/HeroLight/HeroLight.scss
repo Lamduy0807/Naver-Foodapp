@@ -51,6 +51,7 @@
       object-fit: cover;
       width: fit-content;
       height: fit-content;
+      filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
     }
   }
 }
